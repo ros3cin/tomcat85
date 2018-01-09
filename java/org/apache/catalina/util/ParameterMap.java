@@ -20,6 +20,7 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.*;
 import java.util.Map;
 import java.util.Set;
 
@@ -63,7 +64,7 @@ public final class ParameterMap<K,V> implements Map<K,V>, Serializable {
      * @param initialCapacity The initial capacity of this map
      */
     public ParameterMap(int initialCapacity) {
-        delegatedMap = new LinkedHashMap<>(initialCapacity);
+        delegatedMap = new WeakHashMap<>(initialCapacity);
         unmodifiableDelegatedMap = Collections.unmodifiableMap(delegatedMap);
     }
 

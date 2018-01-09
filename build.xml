@@ -161,7 +161,7 @@
   <property name="tomcat-jdbc-src.jar" value="${tomcat.pool}/tomcat-jdbc-src.jar"/>
 
   <!-- Tests To Run -->
-  <property name="test.name" value="**/Test*.java"/>
+  <property name="test.name" value="**/TestParameterMap_Instrumented.java"/>
   <property name="test.formatter" value="-Dorg.apache.juli.formatter=java.util.logging.SimpleFormatter"/>
   <property name="test.relaxTiming" value="false"/>
 

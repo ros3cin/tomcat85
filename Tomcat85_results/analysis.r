@@ -1,0 +1,12 @@
+print('Funcionou!');
+linkedHashMap <- read.csv('linkedHashMap.csv',sep=",",dec=".",header=FALSE);
+weakHashMap <- read.csv('weakHashMap.csv',sep=",",dec=".",header=FALSE);
+linkedHashMap <- as.numeric(linkedHashMap);
+weakHashMap <- as.numeric(weakHashMap);
+linkedHashMap;
+weakHashMap;
+mean(linkedHashMap);
+mean(weakHashMap);
+shapiro.test(linkedHashMap);
+shapiro.test(weakHashMap);
+ks.test(linkedHashMap,weakHashMap);
